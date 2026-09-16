@@ -1,0 +1,12 @@
+numpy>=1.24
+pandas>=2.0
+torch>=2.1
+pyarrow>=14.0
+
+# `pip install -r requirements.txt` installs the CPU-only build of torch --
+# sufficient for the notebooks in cpu/. For the notebooks in gpu/ (NVIDIA
+# GPU + driver required), install torch separately with a CUDA-matched
+# index instead, e.g.:
+#   pip uninstall torch -y
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# Check your driver's supported CUDA version first with `nvidia-smi`.
